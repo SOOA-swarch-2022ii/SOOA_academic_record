@@ -15,4 +15,4 @@ class Professoral_record(models.Model):
     faculty = models.CharField(max_length = 50)
 
     class Meta:
-        app_label = 'SOOA_academic_record_ms'
+        app_label = 'sooa_academic_record_ms'

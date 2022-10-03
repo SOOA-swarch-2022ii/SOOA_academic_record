@@ -1,5 +1,5 @@
-from SOOA_academic_record_ms.models.academic_record_model import Academic_record
-from SOOA_academic_record_ms.serializers.academic_record_serializer import Academic_recordSerializer
+from sooa_academic_record_ms.models.academic_record_model import Academic_record
+from sooa_academic_record_ms.serializers.academic_record_serializer import Academic_recordSerializer
 from rest_framework import mixins
 from rest_framework import generics
 

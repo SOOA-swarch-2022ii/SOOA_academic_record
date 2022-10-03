@@ -19,4 +19,4 @@ class Academic_record(models.Model):
     career = models.CharField(max_length = 50)
 
     class Meta:
-        app_label = 'SOOA_academic_record_ms'
+        app_label = 'sooa_academic_record_ms'
