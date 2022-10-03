@@ -5,4 +5,4 @@ class Academic_recordSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Academic_record
-        fields = ['id','student_id', 'pensum', 'academic_history', 'current_courses', 'papa', 'papi', 'status', 'campus', 'faculty', 'career']
+        fields = ['id','student_id', 'subjects_pending', 'subjects_record', 'current_courses', 'papa', 'papi', 'status', 'campus', 'faculty', 'career']
