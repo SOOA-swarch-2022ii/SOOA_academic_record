@@ -1,2 +1,2 @@
-from .category_serializer import CategorySerializer
-from .product_serializer import ProductSerializer
+from .academic_record_serializer import Academic_recordSerializer
+from .professoral_record_serializer import Professoral_recordSerializer
