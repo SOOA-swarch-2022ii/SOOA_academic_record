@@ -1,16 +1,11 @@
 from django.db import models
-from django.contrib.postgres.fields import ArrayField
 
 class Academic_record(models.Model):
 
     id = models.AutoField(primary_key = True)
     student_id = models.CharField(max_length = 20)
-    subjects_pending = ArrayField(
-            models.CharField(max_length = 20, blank=True)
-        )
-    subjects_record = ArrayField(
-            models.CharField(max_length = 20, blank=True)
-        )
+    subjects_pending = models.TextField(max_length = 100, blank=True)
+    subjects_record = models.TextField(max_length = 100, blank=True)
     papa = models.FloatField()
     papi = models.FloatField()
     status = models.BooleanField()
