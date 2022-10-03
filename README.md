@@ -12,3 +12,5 @@ sudo docker run --name db_sooa_client -d --link sooa_academic_record_db:db -p 80
 
 ## sooa_academic_record_ms
 
+sudo docker build -t sooa_academic_record_ms .
+
