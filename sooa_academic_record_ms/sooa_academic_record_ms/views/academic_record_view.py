@@ -23,6 +23,7 @@ class Academic_recordDetail(mixins.RetrieveModelMixin,
                      
     queryset = Academic_record.objects.all()
     serializer_class = Academic_recordSerializer
+    lookup_field = 'student_id'
 
     def get(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
