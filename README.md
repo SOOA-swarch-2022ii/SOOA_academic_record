@@ -18,3 +18,4 @@ sudo docker build -t sooa_academic_record_ms .
 
 sudo docker run -p 4001:4001 -e DB_HOST=172.17.0.2 -e DB_PORT=3306 -e DB_USER=admin -e DB_PASSWORD=2022 -e DB_NAME=sooa_academic_record_db -e URL=0.0.0.0:4001 sooa_academic_record_ms
 
+
