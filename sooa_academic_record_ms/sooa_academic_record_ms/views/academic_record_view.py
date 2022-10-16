@@ -3,10 +3,10 @@ from sooa_academic_record_ms.serializers.academic_record_serializer import Acade
 from rest_framework import mixins
 from rest_framework import generics
 
-class Academic_recordList(mixins.ListModelMixin,
-                   mixins.CreateModelMixin,
-                   generics.GenericAPIView):
 
+class Academic_recordList(mixins.ListModelMixin,
+                          mixins.CreateModelMixin,
+                          generics.GenericAPIView):
     queryset = Academic_record.objects.all()
     serializer_class = Academic_recordSerializer
 
@@ -16,11 +16,11 @@ class Academic_recordList(mixins.ListModelMixin,
     def post(self, request, *args, **kwargs):
         return self.create(request, *args, **kwargs)
 
+
 class Academic_recordDetail(mixins.RetrieveModelMixin,
-                     mixins.UpdateModelMixin,
-                     mixins.DestroyModelMixin,
-                     generics.GenericAPIView):
-                     
+                            mixins.UpdateModelMixin,
+                            mixins.DestroyModelMixin,
+                            generics.GenericAPIView):
     queryset = Academic_record.objects.all()
     serializer_class = Academic_recordSerializer
     lookup_field = 'student_id'
